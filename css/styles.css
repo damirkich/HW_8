@@ -1,0 +1,79 @@
+/* Загальні стилі для контейнера */
+.schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+  }
+  
+  /* Стилі для кожного дня */
+  .day {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .day h4 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .day ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .day ul li {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  /* Кольори для різних уроків */
+  .day ul li:nth-child(1) {
+    background-color: #ffcccc; /* Рожевий */
+  }
+  
+  .day ul li:nth-child(2) {
+    background-color: #ccffcc; /* Зелений */
+  }
+  
+  .day ul li:nth-child(3) {
+    background-color: #ccccff; /* Синій */
+  }
+  
+  .day ul li:nth-child(4) {
+    background-color: #ffffcc; /* Жовтий */
+  }
+  
+  .day ul li:nth-child(5) {
+    background-color: #ffcc99; /* Оранжевий */
+  }
+  
+  /* Ефекти з псевдокласами стану */
+  .day ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .day ul li:active {
+    background-color: #d9d9d9;
+  }
+  
+  .day ul li:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .day ul li:last-child {
+    border: 2px dashed #333;
+  }
+  
+  .day ul li:nth-child(even) {
+    opacity: 0.8;
+  }
+  
